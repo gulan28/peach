@@ -1,18 +1,7 @@
 
-╭─────────────────────────────────────────────────╮
-│                                                 │
-│                                      ,,         │
-│                                    `7MM         │
-│                                      MM         │
-│ `7MMpdMAo.  .gP"Ya   ,6"Yb.  ,p6"bo  MMpMMMb.   │
-│   MM   `Wb ,M'   Yb 8)   MM 6M'  OO  MM    MM   │
-│   MM    M8 8M""""""  ,pm9MM 8M       MM    MM   │
-│   MM   ,AP YM.    , 8M   MM YM.    , MM    MM   │
-│   MMbmmd'   `Mbmmd' `Moo9^Yo.YMbmd'.JMML  JMML. │
-│   MM                                            │
-│ .JMML.                                          │
-│                                                 │
-╰─────────────────────────────────────────────────╯
+# Peach
+
+Peach is a coding agent. Lavishly copied from the pi agent. [https://pi.dev](https://pi.dev)
 
 
 ## What is Peach?
