@@ -11,29 +11,12 @@ from rich.markdown import Markdown
 from rich.text import Text
 
 from peach.agent import Agent
+from peach.art import print_peach_art
 from peach.tools import get_builtin_tools
 from peach.types import AgentEvent
 
 
 console = Console()
-
-def _print_peach_art():
-    art = Text()
-    art.append("                           █\n", style="green")
-    art.append("                            █  █\n", style="green")
-    art.append("                             ██\n", style="#8B4513")
-    for line in [
-        "                         ██████████",
-        "                        ████████████",
-        "                       ███░░█████████",
-        "                       ████░█████████",
-        "                        ████████████",
-        "                        ████████████",
-        "                          ████████",
-        "                             ██",
-    ]:
-        art.append(line + "\n", style="#FF9B7A")
-    console.print(art)
 
 
 def _make_provider():
@@ -135,7 +118,7 @@ async def _main() -> None:
     renderer = CLIRenderer()
     agent.subscribe(renderer.handle_event)
 
-    _print_peach_art()
+    print_peach_art(console)
     console.print("[bold]peach[/bold] — terminal agent", highlight=False)
     console.print("[dim]Type a message, Ctrl+C to abort, Ctrl+D to quit.[/dim]\n")
 
